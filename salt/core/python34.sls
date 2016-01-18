@@ -25,7 +25,7 @@ install.pip3.4:
   cmd.run:
     - name: |
         curl -L https://boostrap.pypa.io/get-pip.py -o /tmp/get-pip.py
-        python3.4 get-pip.py
+        python3.4 /tmp/get-pip.py
     - cwd: /tmp
     - shell: /bin/bash
     - timeout: 300
