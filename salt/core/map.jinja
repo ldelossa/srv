@@ -1,0 +1,31 @@
+{% set ssh = salt['grains.filter_by']({
+    'default': {
+        'sshd_config_file': 'salt://files/core/sshd_config',
+        'sshd_config_file_path': '/etc/ssh/sshd_config',
+        'ssh_config_file': 'salt://files/core/ssh_config',
+        'ssh_config_file_path': '/etc/ssh/ssh_config',
+        'authorized_keys_file': 'salt://files/core/authorized_keys',
+        'authorized_keys_file_path': '/root/.ssh/authorized_keys',
+        'banner_file': 'salt://files/core/issue',
+        'banner_file_path': '/etc/issue',
+    },
+  })
+%}
+
+{% set stash_keys = salt['grains.filter_by']({
+    'default': {
+        'private': 'salt://files/core/stash/id_rsa_stash_automated',
+        'private_path': '/root/.ssh/id_rsa_stash_automated',
+        'public': 'salt://files/core/stash/id_rsa_stash_automated.pub',
+        'public_path': '/root/.ssh/id_rsa_stash_automated.pub',
+    },
+  })
+%}
+
+{% set sysctl = salt['grains.filter_by']({
+    'default': {
+        'sysctl_config_file': 'salt://files/core/sysctl.conf',
+        'sysctl_config_file_path': '/etc/sysctl.conf',
+    },
+  })
+%}

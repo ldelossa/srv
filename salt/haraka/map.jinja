@@ -1,0 +1,11 @@
+{% set haraka = salt['grains.filter_by']({
+    'default': {
+        'install_path': '/opt/haraka',
+        'config_path': '/opt/haraka',
+        'binary_path': '/opt/haraka/bin/haraka',
+        'haraka_service': 'salt://files/haraka/haraka.service',
+        'haraka_service_path': '/etc/systemd/system/haraka.service',
+    },
+  })
+%}
+

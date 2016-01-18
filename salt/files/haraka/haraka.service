@@ -1,0 +1,23 @@
+{% from "haraka/map.jinja" import haraka with context %}
+#
+# systemd service file for Haraka
+#
+# Put this file in /usr/lib/systemd/system, modify the paths to suit
+# then run: 
+# sudo systemctl enable haraka
+# sudo systemctl start haraka
+#
+
+[Unit]
+Description=Haraka MTA
+After=syslog.target network.target remote-fs.target nss-lookup.target
+ 
+[Service]
+Type=simple
+PIDFile=/var/run/haraka.pid
+ExecStart={{ haraka.binary_path }} -c {{ haraka.config_path }} 
+KillMode=process
+PrivateTmp=true
+ 
+[Install]
+WantedBy=multi-user.target
