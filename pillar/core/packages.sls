@@ -19,6 +19,7 @@ packages:
     - git
     - gcc-c++
     - gcc
+    - zlib
     {% if grains['os_family'] == 'RedHat' %}
     - yum-utils
     {% endif %}

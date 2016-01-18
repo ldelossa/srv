@@ -18,6 +18,7 @@ packages:
     - ntp
     - tree
     - tcl
+    - zlib
     {% if grains['os_family'] == 'RedHat' %}
     - yum-utils
     {% endif %}

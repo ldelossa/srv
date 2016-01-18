@@ -25,10 +25,10 @@ packages:
     - java-1.8.0-openjdk-devel
     - openssl-devel
     - make
+    - zlib
     {% if grains['os_family'] == 'RedHat' %}
     - yum-utils
     {% endif %}
   remove:
-    - postfix 
-    - NetworkManager 
- 
+    - postfix
+    - NetworkManager

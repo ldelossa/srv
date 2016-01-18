@@ -3,7 +3,7 @@ install_packages:
     - pkgs:
     {% for pkg in salt['pillar.get']('packages:install') %}
       - {{ pkg }}
-    {% endfor %} 
+    {% endfor %}
 
 
 remove_packages:
