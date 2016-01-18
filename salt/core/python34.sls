@@ -21,7 +21,7 @@ install.python3.4:
     - require:
       - file: /tmp/Python-3.4.1.tgz
 
-install.python3.4:
+install.pip3.4:
   cmd.run:
     - name: |
         curl -L https://boostrap.pypa.io/get-pip.py -o /tmp/get-pip.py
