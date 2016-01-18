@@ -22,6 +22,7 @@ packages:
     - zlib
     {% if grains['os_family'] == 'RedHat' %}
     - yum-utils
+    - epel-release
     {% endif %}
   remove:
     - postfix
