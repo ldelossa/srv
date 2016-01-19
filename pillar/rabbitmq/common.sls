@@ -1,9 +1,9 @@
 rabbitmq:
   version: '3.5.6'
   users:
-    tmpchq_user:
-      password: RvdeXurQ
+    vhost1_user:
+      password: vhost1_pass
   vhosts:
-    tmpchq:
-      - user: tmpchq_user
-        permission: '".*" ".*" ".*"'  
+    vhost1:
+      - user: vhost1_user
+        permission: '".*" ".*" ".*"'

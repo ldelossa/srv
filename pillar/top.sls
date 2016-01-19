@@ -1,7 +1,7 @@
 base:
   '*':
     - core.packages
-    - core.open_ports
+    - core.common
   '*haraka*':
     - haraka.common
     - haraka.open_ports
@@ -10,3 +10,6 @@ base:
   '*redis*':
     - redis.open_ports
     - redis.common
+  '*jenkins*':
+    - jenkins.common
+    - jenkins.packages

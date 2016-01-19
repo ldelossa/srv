@@ -12,3 +12,5 @@ base:
     - haraka.install
   '*redis*':
     - redis.install
+  '*jenkins*':
+    - jenkins.install

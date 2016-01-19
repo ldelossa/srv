@@ -1,29 +1,29 @@
 packages:
   install:
     {% if grains['virtual'] != none %}
-    - open-vm-tools
+    open-vm-tools:
     {% endif %}
-    - lsof
-    - tcpdump
-    - mtr
-    - traceroute
-    - telnet
-    - bind-utils
-    - curl
-    - wget
-    - ftp
-    - tftp
-    - samba
-    - samba-client
-    - ntp
-    - git
-    - gcc-c++
-    - gcc
-    - zlib
+    lsof:
+    tcpdump:
+    mtr:
+    traceroute:
+    telnet:
+    bind-utils:
+    curl:
+    wget:
+    ftp:
+    tftp:
+    samba:
+    samba-client:
+    ntp:
+    git:
+    gcc-c++:
+    gcc:
+    zlib:
     {% if grains['os_family'] == 'RedHat' %}
-    - yum-utils
-    - epel-release
+    yum-utils:
+    epel-release:
     {% endif %}
   remove:
-    - postfix
-    - NetworkManager
+    postfix:
+    NetworkManager:
