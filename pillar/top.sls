@@ -13,3 +13,6 @@ base:
   '*jenkins*':
     - jenkins.common
     - jenkins.packages
+  '*ipamtest*':
+    - phpipam.common
+    - phpipam.packages

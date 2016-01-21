@@ -14,3 +14,5 @@ base:
     - redis.install
   '*jenkins*':
     - jenkins.install
+  '*ipamtest*':
+    - phpipam.install
