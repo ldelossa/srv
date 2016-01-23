@@ -1,5 +1,5 @@
 $TTL 86400
-@   IN  SOA     ns1.kvm.lan. root.kvm.lan. (
+@   IN  SOA     dns01.kvm.lan. root.kvm.lan. (
         2013042201  ;Serial
         3600        ;Refresh
         1800        ;Retry
