@@ -9,10 +9,10 @@ copy.sysctl-conf:
     - user: root
     - group: root
     - mode: 0755
-    
+
 
 restart.sysctl:
   cmd.run:
     - name: sysctl -p /etc/sysctl.conf
-    - requires: 
-      - file: {{ sysctl.sysctl_config_file_path }} 
+    - requires:
+      - file: {{ sysctl.sysctl_config_file_path }}
