@@ -8,3 +8,7 @@ base:
     - core.python34
     - core.stash_keys
     - core.users
+  'dns*':
+    - bind.install
+  'jenkins*':
+    - jenkins.install

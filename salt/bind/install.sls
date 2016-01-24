@@ -1,8 +1,6 @@
 install_bind:
   pkg.installed:
-    - name:
-      - bind
-      - bind-utils
+    - name: bind
   file.managed:
     - source: salt://files/bind/named.conf
     - name: /etc/named.conf
@@ -17,7 +15,7 @@ configure_zone:
 enable_bind:
   service.running:
     - name: named
-    - enabled: True
     - reload: True
     - watch:
+      - file: /etc/named.conf
       - file: /var/named/kvm.lan.zone

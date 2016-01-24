@@ -14,4 +14,5 @@ dns01		IN	A		192.168.123.2
 
 ; Define hostname -> IP pairs which you wish to resolve
 saltmaster01local.kvm.lan.		IN	A		192.168.123.10
-salt.kvm.lan.                 IN CNAME saltmaster01loca.kvm.lan.
+salt.kvm.lan.                 IN CNAME saltmaster01local.kvm.lan.
+jenkins01.kvm.lan.            IN  A   192.168.123.11

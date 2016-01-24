@@ -15,4 +15,6 @@ remove_packages:
 update_cache:
   cmd.run:
     - name: |
-      yum makecache
+        yum makecache
+    - onchanges:
+      - pkg: install_packages

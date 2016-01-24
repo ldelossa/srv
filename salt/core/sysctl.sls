@@ -16,3 +16,5 @@ restart.sysctl:
     - name: sysctl -p /etc/sysctl.conf
     - requires:
       - file: {{ sysctl.sysctl_config_file_path }}
+    - onchanges:
+      - file: {{ sysctl.sysctl_config_file_path }}
