@@ -15,6 +15,7 @@ configure_zone:
 enable_bind:
   service.running:
     - name: named
+    - enabled: True
     - reload: True
     - watch:
       - file: /etc/named.conf

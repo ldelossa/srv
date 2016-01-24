@@ -17,4 +17,5 @@ install_docker:
     - name: docker-engine
   service.running:
     - name: docker
+    - enabled: True
     - reload: True
