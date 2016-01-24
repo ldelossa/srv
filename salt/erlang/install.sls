@@ -8,8 +8,8 @@ get_erlang:
     - unless: which erl
 
 compile_erlang:
-  cmd.run:  
-    - name: | 
+  cmd.run:
+    - name: |
         cd /tmp/
         tar xzf otp_src_{{ VER }}.tar.gz
         cd otp_src_{{ VER }}

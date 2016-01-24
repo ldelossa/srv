@@ -7,5 +7,3 @@ erlang:
   erlang_package: 'http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_1_general/esl-erlang_18.1-1~ubuntu~vivid_amd64.deb'
   erlang_version: '18.1'
   {% endif %}
-
-

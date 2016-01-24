@@ -3,7 +3,7 @@
 install_stash_keys:
   file.managed:
     - name: {{ stash_keys.private_path }}
-    - source: 
+    - source:
       - {{ stash_keys.private }}
     - user: root
     - group: root
