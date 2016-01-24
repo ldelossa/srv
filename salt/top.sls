@@ -12,3 +12,5 @@ base:
     - bind.install
   'jenkins*':
     - jenkins.install
+  'dockerhost*':
+    - dockerhost.install

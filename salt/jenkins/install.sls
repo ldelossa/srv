@@ -14,7 +14,7 @@ install_jenkins_repo:
         apt-get update
     - unless:
       - ls /var/lib/jenkins
-{% endif %}    
+{% endif %}
   pkg.installed:
     - name: jenkins
   service.running:

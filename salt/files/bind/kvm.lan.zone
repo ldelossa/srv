@@ -16,3 +16,4 @@ dns01		IN	A		192.168.123.2
 saltmaster01local.kvm.lan.		IN	A		192.168.123.10
 salt.kvm.lan.                 IN CNAME saltmaster01local.kvm.lan.
 jenkins01.kvm.lan.            IN  A   192.168.123.11
+dockerhost01.kvm.lan.         IN  A   192.168.123.12
