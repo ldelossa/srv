@@ -18,4 +18,3 @@ gitlab01.kvm.lan.       IN      A       192.168.122.14
 consul01.kvm.lan.       IN      A       192.168.122.15
 saltmaster01local.kvm.lan.    IN    A    192.168.122.16
 varnish01.kvm.lan.      IN      A       192.168.122.17
-testmachine.kvm.lan.      IN      A      192.168.122.50
