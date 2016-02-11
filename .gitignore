@@ -123,3 +123,6 @@ docs/_build/
 
 #fabricfiles
 fabfile.py*
+
+#ssh keys
+id_rsa*
