@@ -8,13 +8,6 @@ $TTL    604800
 
     IN      NS      dns01.kvm.lan.
 
-dns01.kvm.lan.          IN      A       192.168.122.2
-dns02.kvm.lan.          IN      A       192.168.122.3
-dockerhost01.kvm.lan.   IN      A       192.168.122.11
-salt.kvm.lan.           IN      CNAME   saltmaster01local
-ipam01.kvm.lan.         IN      A       192.168.122.12
-jenkins01.kvm.lan.      IN      A       192.168.122.13
-gitlab01.kvm.lan.       IN      A       192.168.122.14
-consul01.kvm.lan.       IN      A       192.168.122.15
-saltmaster01local.kvm.lan.    IN    A    192.168.122.16
-varnish01.kvm.lan.      IN      A       192.168.122.17
+dns01.kvm.lan.          IN      A       10.1.1.2
+saltmaster01.kvm.lan.   IN      A       10.1.1.10
+salt.kvm.lan.           IN      CNAME   saltmaster01

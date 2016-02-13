@@ -9,7 +9,7 @@ install_bind:
 configure_zone:
   file.managed:
     - source: salt://files/bind/kvm.lan.zone
-    - name: /var/named/db.kvm.lan
+    - name: /var/named/kvm.lan.zone
     - force: True
 
 enable_bind:
@@ -18,4 +18,4 @@ enable_bind:
     - reload: True
     - watch:
       - file: /etc/named.conf
-      - file: /var/named/db.kvm.lan
+      - file: /var/named/kvm.lan.zone
