@@ -1,2 +1,2 @@
 open_ports:
-  53: tcp
+  53: udp

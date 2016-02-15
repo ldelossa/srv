@@ -11,3 +11,5 @@ $TTL    604800
 dns01.kvm.lan.          IN      A       10.1.1.2
 saltmaster01.kvm.lan.   IN      A       10.1.1.10
 salt.kvm.lan.           IN      CNAME   saltmaster01
+dockerhost01.kvm.lan.      IN      A      10.1.1.11
+jenkins01.kvm.lan.      IN      A      10.1.1.12
