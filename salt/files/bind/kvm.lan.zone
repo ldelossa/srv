@@ -8,7 +8,6 @@ $TTL    604800
 
     IN      NS      dns01.kvm.lan.
 
-<<<<<<< HEAD
 ; Define hostname -> IP pairs which you wish to resolve
 saltmaster01local.kvm.lan.		IN	A		192.168.123.10
 salt.kvm.lan.                 IN CNAME saltmaster01local.kvm.lan.
@@ -16,10 +15,8 @@ jenkins01.kvm.lan.            IN  A   192.168.123.11
 dockerhost01.kvm.lan.         IN  A   192.168.123.12
 scalr01.kvm.lan.              IN  A   192.168.123.13
 consul01.kvm.lan.             IN  A   192.168.123.14
-=======
 dns01.kvm.lan.          IN      A       10.1.1.2
 saltmaster01.kvm.lan.   IN      A       10.1.1.10
 salt.kvm.lan.           IN      CNAME   saltmaster01
 dockerhost01.kvm.lan.      IN      A      10.1.1.11
 jenkins01.kvm.lan.      IN      A      10.1.1.12
->>>>>>> 530a065c2d837ab174327faae231b22d5aaf23b9
