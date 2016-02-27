@@ -17,3 +17,5 @@ saltmaster01local.kvm.lan.		IN	A		192.168.123.10
 salt.kvm.lan.                 IN CNAME saltmaster01local.kvm.lan.
 jenkins01.kvm.lan.            IN  A   192.168.123.11
 dockerhost01.kvm.lan.         IN  A   192.168.123.12
+scalr01.kvm.lan.              IN  A   192.168.123.13
+consul01.kvm.lan.             IN  A   192.168.123.14
